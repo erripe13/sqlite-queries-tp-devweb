@@ -13,7 +13,7 @@ const db = new sqlite3.Database("./items.db", (err) => {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         carName TEXT NOT NULL,
         carYear NUMBER NOT NULL,
-        carImage TEXT NOT NULL
+        carImg TEXT NOT NULL
       )`,
 			(err) => {
 				if (err) {

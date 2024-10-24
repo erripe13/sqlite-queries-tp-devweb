@@ -56,7 +56,7 @@ const carsList = [
 function insertCars() {
 	carsList.forEach((car) => {
 		db.run(
-			`INSERT INTO cars (carName, carYear, carImage) VALUES (?, ?, ?)`,
+			`INSERT INTO cars (carName, carYear, carImg) VALUES (?, ?, ?)`,
 			[car.carName, car.carYear, car.carImg],
 			(err) => {
 				if (err) {
